@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500;600;700;800&display=swap');
+
+body {
+  font-family: 'Assistant', sans-serif;
+}
+
+.section--top-hero {
+  background-color: #1860ff;
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .nav-logo {
+      display: block;
+      flex: 1;
+      max-width: 150px;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      font-weight: bold;
+      background-color: #2b6cff;
+      border-radius: 50px;
+      border: 4px solid #1784ff;
+      padding: 0.6em;
+      flex: 1;
+      margin: 0 80px;
+      justify-content: space-around;
+
+      li {
+        padding: 0.2em 0.3em;
+        display: inline;
+        list-style: none;
+        position: relative;
+
+        &:before {
+          content: '';
+          width: 12px;
+          height: 12px;
+          background-color: #ffc200;
+          border-radius: 12px;
+          display: block;
+          position: absolute;
+          top: 5px;
+          left: -15px;
+        }
+      }
+    }
+  }
+
+  a {
+    color: #fff;
+  }
+}
+
+//Headers
+h1 {
+  font-size: 96px;
+  color: #fff;
+  font-weight: 900;
+  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1.45rem 1.0875rem;
+}
+
+// Cartoon Button styles 
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #fff;
+  border-radius: 100px;
+  padding: 0.8em 1em 0.7em 1em;
+  position: relative;
+  top: -1.5px;
+  display: inline-block;
+  width: auto;
+}
+
+.btn--small {
+  background-image: linear-gradient(#00d6ff, #008cff);
+  box-shadow: 0px 4px 0px rgba(0, 102, 253, 1);
+  display: block;
+  z-index: 2;
+}
+
+.btn--large {
+  font-size: 24px;
+  padding: 0.7em 1em;
+  background-image: linear-gradient(#ffb419, #ff9728);
+  box-shadow: 0px 4px 0px #ff5800;
+  display: block;
+  z-index: 2;
+}
+
+.btn--container {
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0px 4px 0px rgba(207, 237, 252, 1), 0px 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+//Hero Slider
+.hero-slider {
+  h1 {
+    width: 50%;
+    margin: 1em 0 0.2em 0;
+  }
+}

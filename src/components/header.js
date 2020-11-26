@@ -2,33 +2,39 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import Logo from "../images/logo.svg"
+
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <section className="section--top-hero">
+    <div className="container">
+      <header>
+        <nav>
+          <Link className="nav-logo" to="/">
+            <img src={Logo} alt="Ellies Games Logo"/>
+          </Link>
+          <ul>
+            <li>Homes</li>
+            <li>Games</li>
+            <li>Apps</li>
+            <li>About</li>  
+          </ul>
+          <div className="btn--container">
+            <div className="btn btn--small">
+              Contact
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div className="hero-slider">
+        <h1>Math that’s fun!</h1>
+        <div className="btn--container">
+          <div className="btn btn--large">
+            MATH DUEL
+          </div>
+        </div>
+      </div> 
     </div>
-  </header>
+  </section>
 )
 
 Header.propTypes = {
