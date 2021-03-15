@@ -1,0 +1,118 @@
+//Slideshow
+.react-slideshow-wrapper {
+  padding: 2em 0 6em 0;
+
+
+}
+
+.react-slideshow-container {
+  .default-nav {
+    display: none;
+  }
+}
+
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.each-slide {
+  position: relative;
+  min-height: 500px;
+
+  .img-container {
+    position: absolute;
+    right: 0px;
+  }
+}
+
+//Hero Slider
+.react-slideshow-wrapper {
+  padding: 2em 0 6em 0;
+
+  .each-slide {
+    position: relative;
+    min-height: 380px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .slide-content {
+    z-index: 500;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-size: cover;
+    flex-direction: column;
+    height: 350px;
+    width: 70%;
+  }
+
+  h1 {
+    margin: 1em 0 0.2em 0;
+  }
+
+  .img-container {
+    position: relative;
+    right: -450px;
+    top: -300px;
+    max-width: 500px;
+
+    img {
+      position: absolute;
+      width: 100%;
+    }
+
+    .img-1 {
+      z-index: 300;
+      top: -40px;
+    }
+
+    .img-2 {
+      z-index: 100;
+      left: -280px
+    }
+
+    .img-3 {
+      z-index: 200;
+      left: -180px;
+    }
+  }
+}
+
+.indicators {
+  background-color: #004af0;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 1.2em;
+  display: inline-block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  position: relative;
+  left: -330px;
+  bottom: 50px;
+}
+
+.indicator {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #367fff;
+  width: 8px;
+  height: 8px;
+  overflow: hidden;
+  text-indent: 99999px;
+  border-radius: 8px;
+  transform: rotate(45deg);
+  display: block;
+  margin: 0 10px;
+}
+
+.indicator.active {
+  background-image: linear-gradient(#ffb419, #ff9728);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
