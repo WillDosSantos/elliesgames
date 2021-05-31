@@ -67,6 +67,10 @@ body {
           top: 5px;
           left: -15px;
         }
+
+        a {
+          text-decoration: none;
+        }
       }
     }
   }
@@ -98,8 +102,13 @@ h3 {
 
 section {
   background-color: #1860ff;
+  color: #fff;
 
   h3 {
+    text-align: center;
+  }
+
+  h2 {
     text-align: center;
   }
 }

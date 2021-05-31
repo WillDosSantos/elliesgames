@@ -12,9 +12,13 @@ import { motion } from "framer-motion"
 import Hero2 from "../images/hero-2-img.svg"
 import Hero3 from "../images/hero-3-img.svg"
 
+import Slideshow from "../components/slideshow"
+import 'react-slideshow-image/dist/styles.css'
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <Slideshow/>
     <section className="section--lte-gray">
     <div className="container">
       <div className="grid grid-2">
@@ -22,7 +26,7 @@ const IndexPage = () => (
           <img alt="Second Hero" src={Hero2}/>
         </div>
         <div className="col" style={{ padding: '1em', display: 'flex', justifyContent: 'center', alignItems: 'flex-start', flexDirection: 'column' }}>
-          <h2 className="lte-bg">
+          <h2 className="lte-bg" style={{textAlign: 'left'}}>
             Apps & Games for all ages
           </h2>
           <p>Want to get the latest games and apps? Sign up for our email list and be the one of the first to be the most exclusive content.</p>

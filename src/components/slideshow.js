@@ -19,7 +19,7 @@ const Slideshow = () => {
     indicators: i => (<div className="indicator">{i + 1}</div>)
   }
   return (
-    <div>
+    <div className="slideshow-container">
       <Slide {...zoomOutProperties} easing="ease">
         <div className="each-slide">
           <div className="slide-content">

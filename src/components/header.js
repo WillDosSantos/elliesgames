@@ -2,14 +2,6 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import Slideshow from "../components/slideshow"
-import 'react-slideshow-image/dist/styles.css'
-
-//Images
-import slideImg1 from "../images/slides/slide1-img-1.png"
-import slideImg2 from "../images/slides/slide1-img-2_1.png"
-import slideImg3 from "../images/slides/slide1-img-2.png"
-
 //Component animations
 import { motion } from "framer-motion"
 
@@ -24,10 +16,18 @@ const Header = ({ siteTitle }) => (
             <img src={Logo} alt="Ellies Games Logo"/>
           </Link>
           <ul>
-            <li>Home</li>
-            <li>Games</li>
-            <li>Apps</li>
-            <li>About</li>  
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/games">Games</Link>
+            </li>
+            <li>
+              <Link to="/apps">Apps</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>  
           </ul>
           <motion.div
             whileHover={{ scale: 0.9 }}
@@ -40,7 +40,6 @@ const Header = ({ siteTitle }) => (
         </nav>
       </header>
     </div>
-    <Slideshow/>
   </section>
 )
 

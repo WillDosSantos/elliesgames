@@ -1,15 +1,22 @@
 //Slideshow
+.slideshow-container {
+  background-color: #1860ff;
+}
+
 .react-slideshow-wrapper {
   padding: 2em 0 6em 0;
 
 
 }
 
-.react-slideshow-container {
-  .default-nav {
-    display: none;
+#gatsby-focus-wrapper {
+  .react-slideshow-container {
+    .default-nav {
+      display: none;
+    }
   }
 }
+
 
 
 .each-slide span {
