@@ -22,6 +22,7 @@ import Twitter from "../images/icons/twitter.svg"
 import Youtube from "../images/icons/youtube.svg"
 import Facebook from "../images/icons/facebook.svg"
 
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -32,6 +33,7 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
 
   return (
     <>

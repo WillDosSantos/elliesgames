@@ -12,6 +12,10 @@ import { motion } from "framer-motion"
 import Hero2 from "../images/hero-2-img.svg"
 import Hero3 from "../images/hero-3-img.svg"
 
+//Images - Devices
+import Droid from "../images/droid.svg"
+import iOSPhone from "../images/phone-ios.svg"
+
 import Slideshow from "../components/slideshow"
 import 'react-slideshow-image/dist/styles.css'
 
@@ -45,8 +49,14 @@ const IndexPage = () => (
     <section className="section--gray" style={{padding: '2em'}}>
       <div className="container">
         <div className="grid grid-2">
-          <div className="btn btn--square">Latest for iOS</div>
-          <div className="btn btn--square">Latest for Android</div>
+          <div className="btn btn--square">
+            <span>Latest for iOS</span>
+            <img src={iOSPhone} alt="Latest for iOS Devices"/>
+          </div>
+          <div className="btn btn--square">
+            <span>Latest for Android</span>
+            <img src={Droid} alt="Latest for Android Devices"/>
+          </div>
         </div>
       </div>
     </section>
@@ -96,6 +106,7 @@ const IndexPage = () => (
       <div className="container"
       style={{    
         paddingTop: '100px',
+        paddingBottom: '100px',
         marginBottom: '-100px',
       }}
       >
